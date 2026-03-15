@@ -1,0 +1,104 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  text-align:center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body{
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  min-height:100vh;
+  color:white;
+}
+
+/* Title */
+h1{
+  background: rgba(0,0,0,0.5);
+  height:5rem;
+  line-height:5rem;
+  font-size:2.4rem;
+  letter-spacing:2px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Choices container */
+.choices{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:4rem;
+  margin-top:3rem;
+}
+
+/* Choice circles */
+.choice{
+  height:170px;
+  width:170px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(10px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+  transition:all 0.3s ease;
+}
+
+/* Hover effect */
+.choice:hover{
+  cursor:pointer;
+  transform:scale(1.1);
+  box-shadow:0 12px 30px rgba(0,0,0,0.6);
+  background:linear-gradient(135deg,#ff6a00,#ee0979);
+}
+
+/* Images */
+img{
+  height:150px;
+  width:150px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+/* Score board */
+.score-board{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2rem;
+  margin-top:3rem;
+  gap:6rem;
+}
+
+/* Score numbers */
+#user-score,
+#comp-score{
+  font-size:4rem;
+  font-weight:bold;
+  text-shadow:0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Labels */
+.score p:last-child{
+  font-size:1.3rem;
+  margin-top:4px;
+  opacity:0.9;
+}
+
+/* Message */
+.msg-container{
+  margin-top:3rem;
+}
+
+#msg{
+  background:rgba(0,0,0,0.6);
+  font-size:1.8rem;
+  padding:1rem 2rem;
+  border-radius:12px;
+  display:inline-block;
+  box-shadow:0 6px 20px rgba(0,0,0,0.4);
+  backdrop-filter:blur(6px);
+  transition:all 0.3s ease;
+}
